@@ -10,16 +10,17 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
+    var play: GameScene!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       // LabelOutlet.isHidden = true
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
-                
+                play = scene as? GameScene
                 // Present the scene
                 view.presentScene(scene)
             }
@@ -32,14 +33,16 @@ class GameViewController: UIViewController {
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
+        return .landscapeRight
     }
 
     override var prefersStatusBarHidden: Bool {
         return true
     }
+   
+    @IBAction func jumpAction(_ sender: Any) {
+        play.jump()
+        
+    }
+    
 }
