@@ -46,4 +46,16 @@ class GameViewController: UIViewController {
         
     }
     
+    @IBAction func rightAction(_ sender: Any) {
+        play.right()
+        
+    }
+    
+    
+    @IBAction func leftAction(_ sender: Any) {
+        play.left()
+        
+    }
+    
+    
 }

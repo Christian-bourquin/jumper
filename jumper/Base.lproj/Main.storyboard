@@ -24,6 +24,24 @@
                                     <action selector="jumpAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="3KH-sO-O2d"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcb-Gr-EQn">
+                                <rect key="frame" x="525" y="324" width="60" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="right"/>
+                                <connections>
+                                    <action selector="rightAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="fMK-aC-5Vw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3q-l9-0Ak">
+                                <rect key="frame" x="288" y="324" width="49" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="left"/>
+                                <connections>
+                                    <action selector="leftAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="FxM-zz-1tv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

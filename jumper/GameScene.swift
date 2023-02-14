@@ -114,6 +114,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     func jump(){
         Ship.physicsBody?.velocity = CGVector(dx: 500, dy: 500)
     }
+    
+    func right(){
+        Ship.physicsBody?.velocity = CGVector(dx: 400, dy: 300)
+    }
+    
+    func left(){
+        Ship.physicsBody?.velocity = CGVector(dx: -400, dy: 300)
+    }
     /*
     override func keyDown(theEvent: NSEvent) {
         let keyCode = theEvent.keyCode
